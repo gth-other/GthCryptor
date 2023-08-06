@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.21)
+project(GthCryptor)
+set(CMAKE_CXX_STANDARD 20)
+add_executable(GthCryptor examples/main.cpp src/Byte.hpp src/UInt128.hpp src/UInt128.cpp src/AES128.hpp src/AES128.cpp src/GthCryptor.hpp src/GthCryptor.cpp src/SHA256.hpp src/SHA256.cpp)
+add_definitions(-Werror)
+add_definitions(-O3)
+add_definitions(-flto)
+add_definitions(-maes)
